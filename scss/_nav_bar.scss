@@ -1,0 +1,26 @@
+.nav_bar {
+    max-width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    a img {
+        width: 90px;
+        height: 55px;
+    }
+    ul {
+        color: white;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        font-family: sans-serif;
+    }
+    .btn-contc {
+        width: 166px;
+        height: 59px;
+        background-color: #479D31;
+        color: white;
+        font-size: 19px;
+        border-radius: 25px;
+    }
+}
