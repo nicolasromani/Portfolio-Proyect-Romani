@@ -1,4 +1,4 @@
-.nav_bar {
+.navbar {
     max-width: 100%;
     margin: 20px;
     display: flex;
@@ -8,14 +8,24 @@
         height: 55px;
     }
     ul {
-        color: white;
         list-style: none;
         display: flex;
         align-items: center;
-        gap: 60px;
-        font-family: sans-serif;
+        gap: 25px;
+        font-family: $font-pr_hel;
+        font-weight: bold;
+        font-size: 18px;
+        li a {
+            color: rgb(223, 215, 215);
+            text-decoration: none;
+            padding: 5px 20px;
+            &:hover {
+                color: white;
+                text-decoration: underline;
+            }
+        }
     }
-    .btn-contc {
+    .navbar__btn-contc {
         width: 166px;
         height: 59px;
         background-color: #479D31;
