@@ -1,12 +1,10 @@
 .navbar {
     max-width: 100%;
-    margin: 20px;
+    height: 79px;
     display: flex;
-    justify-content: space-between;
-    a img {
-        width: 90px;
-        height: 55px;
-    }
+    align-items: center;
+    justify-content: center;
+    position: relative;
     ul {
         list-style: none;
         display: flex;
@@ -26,6 +24,9 @@
         }
     }
     .navbar__btn-contc {
+        position: absolute;
+        right: 30px;
+        top: 15px;
         width: 166px;
         height: 59px;
         background-color: #479D31;

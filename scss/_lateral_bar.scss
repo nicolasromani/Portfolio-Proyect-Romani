@@ -1,0 +1,22 @@
+.lateral-bar {
+    width: 100px;
+    height: 650px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    a img {
+        margin: 10px;
+        width: 80px;
+        height: 50px;
+    }
+}
+.lateral-bar__redes {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    font-size: 30px;
+}
