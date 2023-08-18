@@ -1,0 +1,43 @@
+.bloque1 {
+    width: 100%;
+    height:216px;
+    position: relative;
+}
+.text_intro__1 {
+    color: white;
+    border: white solid 2px;
+    position: absolute;
+    left: 227px;
+    width: 701px;
+    height: 216px;
+    font-family: $font-pr_hel;
+    h1 {
+        font-size: 32px;
+        font-weight: lighter;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 40px;
+        font-weight: bolder;
+        span {
+            color: #479D31;
+        }
+    } 
+    
+}
+.bloque2 {
+    width: 100%;
+    height: 198px;
+    position: relative;
+}
+.text_intro__2 {
+    color: white;
+    border: solid white 2px;
+    font-family: $font-pr_hel;
+    position: absolute;
+    left: 766px;
+    width: 591px;
+    height: 198px;
+}
