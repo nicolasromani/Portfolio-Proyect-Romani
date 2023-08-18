@@ -1,11 +1,12 @@
 .bloque1 {
     width: 100%;
-    height:216px;
+    height:512px;
     position: relative;
+    display: flex;
+    align-items: end;
 }
 .text_intro__1 {
     color: white;
-    border: white solid 2px;
     position: absolute;
     left: 227px;
     width: 701px;
@@ -29,15 +30,17 @@
 }
 .bloque2 {
     width: 100%;
-    height: 198px;
-    position: relative;
+    height: 512px;
+    display: flex;
+    justify-content: end;
 }
 .text_intro__2 {
     color: white;
-    border: solid white 2px;
     font-family: $font-pr_hel;
-    position: absolute;
-    left: 766px;
+    margin-right: 104px;
     width: 591px;
     height: 198px;
+    p {
+        margin-top: 25px;
+    }
 }

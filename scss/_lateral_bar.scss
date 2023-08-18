@@ -1,6 +1,7 @@
 .lateral-bar {
     width: 100px;
-    height: 650px;
+    height: 1024px;
+    
     position: fixed;
     z-index: 1;
     display: flex;
@@ -19,4 +20,5 @@
     text-align: center;
     gap: 50px;
     font-size: 30px;
+    margin-bottom: 200px;
 }
