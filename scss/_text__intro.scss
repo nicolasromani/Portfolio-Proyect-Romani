@@ -101,6 +101,7 @@
 .bloque5__position-left {
     position: absolute;
     left: 227px;
+    display: flex;
 }
 .bloque5__text-descrip {
     width: 700px;
@@ -118,11 +119,47 @@
     }
 }
 .bloque5__data-contact {
+    display: flex;
+    gap: 15px;
+}
+.bloque5__data-logos {
+    display: inline-block;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    gap: 25px;
+}
+.bloque5__data-info {
     h3 {
+        padding-bottom: 22px;
         font-weight: 100;
-        font-size: 18px;
-        i {
-            padding: 5px 20px 15px 0;
-        }
     }
+}
+.bloque5__form {
+    width: 500px;
+    h5 {
+        font-family: $font-pr_hel;
+        font-size: 18px;
+        margin-bottom: 5px;
+        
+    }
+    input {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        font-family: $font-pr_hel;
+        border: solid $color-sec 2px;
+        padding: 10px;
+    }
+    textarea {
+        width: 100%;
+        border-radius: 5px;
+        font-family: $font-pr_hel;
+        border: solid $color-sec 2px;
+        padding: 10px;
+    }
+
 }

@@ -192,6 +192,7 @@
 .bloque5__position-left {
   position: absolute;
   left: 227px;
+  display: flex;
 }
 
 .bloque5__text-descrip {
@@ -210,12 +211,49 @@
   margin-bottom: 20px;
 }
 
-.bloque5__data-contact h3 {
-  font-weight: 100;
-  font-size: 18px;
+.bloque5__data-contact {
+  display: flex;
+  gap: 15px;
 }
-.bloque5__data-contact h3 i {
-  padding: 5px 20px 15px 0;
+
+.bloque5__data-logos {
+  display: inline-block;
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  gap: 25px;
+}
+
+.bloque5__data-info h3 {
+  padding-bottom: 22px;
+  font-weight: 100;
+}
+
+.bloque5__form {
+  width: 500px;
+}
+.bloque5__form h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.bloque5__form input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #479D31 2px;
+  padding: 10px;
+}
+.bloque5__form textarea {
+  width: 100%;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #479D31 2px;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
