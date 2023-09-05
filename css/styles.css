@@ -5,7 +5,10 @@
 }
 
 #bg-img {
-  background-color: black;
+  background-image: url("../multimedia/img/logos/bg-image/6474.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .lateral-bar {
