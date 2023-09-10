@@ -23,7 +23,7 @@
         font-size: 40px;
         font-weight: bolder;
         span {
-            color: #479D31;
+            color: $color-sec;
         }
     } 
 }
@@ -98,10 +98,43 @@
     display: flex;
 }
 .bloque4__tarjetas-work-card {
-    width: 550px;
-    height: 400px;
+    width: 370px;
+    height: 250px;
+    position: relative;
     border: solid white 2px;
     margin: 0 50px;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+    &:hover > .bloque4__tarjetas-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    &:hover > img {
+        transform: scale(1.1);
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out;
+        
+    }
+    .bloque4__tarjetas-overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        font-family: $font-pr_hel;
+        background: #479d316b;
+        color: black;
+        text-align: center;
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 .bloque5 {
     width: 100%;
