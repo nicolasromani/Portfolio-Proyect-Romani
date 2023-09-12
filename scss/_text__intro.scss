@@ -51,6 +51,7 @@
     color: white;
     position: relative;
     left: 227px;
+    margin-top: 100px;
 }
 .bloque3__text-descrip {
     position: absolute;
@@ -81,6 +82,7 @@
     color: white;
     position: relative;
     left: 227px;
+    margin-top: 100px;
 }
 .bloque4__text-descrip {
     font-family: $font-pr_hel;
@@ -96,6 +98,7 @@
     width: 1300px;
     height: 400px;
     display: flex;
+    justify-content: center;
 }
 .bloque4__tarjetas-work-card {
     width: 370px;
@@ -125,7 +128,7 @@
         width: 100%;
         height: 100%;
         font-family: $font-pr_hel;
-        background: #479d316b;
+        background: #479d3194;
         color: black;
         text-align: center;
         transition: all 500ms ease-out;
@@ -134,6 +137,18 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        h3 {
+            
+            font-weight: bold;
+            font-size: 35px;
+            padding-bottom: 10px;
+        }
+        p {
+            font-weight: bold;
+            font-size: 20px;
+            padding: 0 25px;
+            
+        }
     }
 }
 .bloque5 {
@@ -141,12 +156,14 @@
     height: 850px;
     color: white;
     position: relative;
+    margin-top: 100px;
 }
 .bloque5__position-left {
     position: absolute;
     left: 227px;
     display: flex;
     gap: 150px;
+    margin-top: 100px;
 }
 .bloque5__text-descrip {
     width: 700px;
