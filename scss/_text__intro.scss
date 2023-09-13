@@ -84,7 +84,7 @@
     }
 }
 .bloque3 {
-    width: 100%;
+    width: 1676px;
     height: 425px;
     display: flex;
     color: white;
@@ -138,7 +138,7 @@
     }
 }
 .bloque4 {
-    width: 100%;
+    width: 1676px;
     height: 425px;
     display: flex;
     color: white;
@@ -155,7 +155,8 @@
     }
     @media (max-width:1024px) {
         margin-top: 0;
-        height: 700px;
+        height: 550px;
+        margin-bottom: 250px;
         .bloque4__text-descrip {
             span {
                 font-size: 20px;
@@ -255,6 +256,20 @@
         margin-top: 0;
         .bloque5__position-left {
             margin-top: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+        .bloque5__text-descrip {
+            text-align: center;
+            span {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 40px;
+            }
+        }
+        .bloque5__data-contact {
+            justify-content: center;
         }
     }
 }
@@ -338,5 +353,6 @@
     font-size: 20px;
     font-weight: bolder;
     border-radius: 5px;
-    margin-top: 10px;  
+    margin-top: 10px; 
+    cursor: pointer; 
 }
