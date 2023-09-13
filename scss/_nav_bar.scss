@@ -13,9 +13,6 @@
         font-family: $font-pr_hel;
         font-weight: bold;
         font-size: 18px;
-        @media (max-width: 1024px ){
-            gap: 30px;
-        }
         li a {
             color: rgb(223, 215, 215);
             text-decoration: none;
@@ -56,5 +53,15 @@
         font-size: 20px;
         font-weight: bolder;
         border-radius: 25px;
+    }
+    @media (max-width: 1024px ){
+        ul {
+            gap: 25px;
+        }
+        .navbar__btn-contc {
+            width: 140px;
+            height: 45px;
+            font-size: 18px;
+        }
     }
 }

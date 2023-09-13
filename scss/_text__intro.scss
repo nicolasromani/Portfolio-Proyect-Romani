@@ -4,12 +4,27 @@
     position: relative;
     display: flex;
     align-items: end;
+    @media (max-width:1024px) {
+        height: 375px;
+        .text_intro__1 {
+            width: 500px;
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 25px;
+            }
+        }
+    }
 }
 .text_intro__1 {
     color: white;
     position: absolute;
     left: 227px;
-    width: 701px;
+    width: 700px;
     height: 216px;
     font-family: $font-pr_hel;
     h1 {
@@ -25,6 +40,17 @@
         span {
             color: $color-sec;
         }
+    }
+    @media (max-width: 1440px) {
+        h1 {
+            font-size: 28px;
+        }
+        h2 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 30px;
+        }
     } 
 }
 .bloque2 {
@@ -32,6 +58,15 @@
     height: 350px;
     display: flex;
     justify-content: end;
+    @media (max-width:1024px) {
+        .text_intro__2 {
+            margin-top: 0;
+            font-size: 18px;
+            p {
+                margin-top: 15px;
+            }
+        }
+    }
 }
 .text_intro__2 {
     color: white;
@@ -56,6 +91,26 @@
     position: relative;
     left: 227px;
     margin-top: 150px;
+    @media (max-width:1024px) {
+        margin-top: 0;
+        height: 250px;
+        .bloque3__text-descrip {
+            top: 0;
+            span {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 40px;
+            }
+        }
+        .bloque3__logo-skills {
+            top: 0;
+            margin-left: 220px;
+            font-size: 70px;
+            flex-wrap:wrap;
+            width: 650px;
+        }
+    }
 }
 .bloque3__text-descrip {
     position: absolute;
@@ -78,6 +133,9 @@
     margin-left: 600px;
     font-size: 90px;
     gap: 50px;
+    @media (max-width: 1440px){
+        margin-left: 400px;
+    }
 }
 .bloque4 {
     width: 100%;
@@ -87,6 +145,34 @@
     position: relative;
     left: 227px;
     margin-top: 100px;
+    @media (max-width:1440px){
+        .bloque4__tarjetas-work {
+            justify-content: start;
+        }
+        .bloque4__text-descrip {
+            width: 300px;
+        }
+    }
+    @media (max-width:1024px) {
+        margin-top: 0;
+        height: 700px;
+        .bloque4__text-descrip {
+            span {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 40px;
+            }
+        }
+        .bloque4__tarjetas-work {
+            flex-wrap: wrap;
+            width: 400px;
+        }
+        .bloque4__tarjetas-work-card {
+            margin: 0;
+            margin-bottom: 25px;
+        }
+    }
 }
 .bloque4__text-descrip {
     font-family: $font-pr_hel;
@@ -100,7 +186,6 @@
 }
 .bloque4__tarjetas-work {
     width: 1300px;
-    height: 400px;
     display: flex;
     justify-content: center;
 }
@@ -124,7 +209,6 @@
         width: 100%;
         height: 100%;
         transition: all 500ms ease-out;
-        
     }
     .bloque4__tarjetas-overlay {
         position: absolute;
@@ -142,7 +226,6 @@
         flex-direction: column;
         justify-content: center;
         h3 {
-            
             font-weight: bold;
             font-size: 35px;
             padding-bottom: 10px;
@@ -151,7 +234,6 @@
             font-weight: bold;
             font-size: 20px;
             padding: 0 25px;
-            
         }
     }
 }
@@ -161,6 +243,20 @@
     color: white;
     position: relative;
     margin-top: 100px;
+    @media (max-width:1440px){
+        .bloque5__position-left {
+            gap:50px;
+        }
+        .bloque5__text-descrip {
+            width: 600px;
+        }
+    }
+    @media (max-width:1024px){
+        margin-top: 0;
+        .bloque5__position-left {
+            margin-top: 0;
+        }
+    }
 }
 .bloque5__position-left {
     position: absolute;

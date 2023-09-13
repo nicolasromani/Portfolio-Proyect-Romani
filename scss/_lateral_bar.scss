@@ -10,9 +10,12 @@
         margin: 10px;
         width: 80px;
         height: 50px;
-        position: absolute;
-        left: 10px;
-        top: 10px;
+    }
+    @media (max-width:1024px){
+        height: 780px;
+        .lateral-bar__redes {
+            margin-bottom: 100px;
+        }
     }
 }
 .lateral-bar__redes {
