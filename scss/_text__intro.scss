@@ -91,6 +91,9 @@
     position: relative;
     left: 227px;
     margin-top: 150px;
+    @media (max-width:1440px) {
+        width: 1213px;
+    }
     @media (max-width:1024px) {
         margin-top: 0;
         height: 250px;
@@ -146,11 +149,13 @@
     left: 227px;
     margin-top: 100px;
     @media (max-width:1440px){
+        width: 1213px;
         .bloque4__tarjetas-work {
-            justify-content: start;
+            justify-content: space-around;
+            width: 961px;
         }
-        .bloque4__text-descrip {
-            width: 300px;
+        .bloque4__tarjetas-work-card {
+            margin: 0;
         }
     }
     @media (max-width:1024px) {
@@ -186,9 +191,9 @@
     }
 }
 .bloque4__tarjetas-work {
-    width: 1300px;
+    width: 1100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .bloque4__tarjetas-work-card {
     width: 370px;

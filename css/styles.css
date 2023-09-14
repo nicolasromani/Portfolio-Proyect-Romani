@@ -29,14 +29,14 @@
 .lateral-bar .hamb__menu {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
   width: max-content;
   cursor: pointer;
 }
 .lateral-bar .hamb__menu::before, .lateral-bar .hamb__menu::after, .lateral-bar .hamb__menu input {
   content: "";
-  width: 60px;
-  height: 8px;
+  width: 35px;
+  height: 5px;
   background-color: white;
   border-radius: 9999px;
   transform-origin: left center;
@@ -51,13 +51,13 @@
 }
 .lateral-bar .hamb__menu:has(input:checked)::before {
   rotate: 45deg;
-  translate: 0 -4px;
-  width: 62.2253967443px;
+  translate: 0 -2.5px;
+  width: 41.0121933087px;
 }
 .lateral-bar .hamb__menu:has(input:checked)::after {
   rotate: -45deg;
-  width: 62.2253967443px;
-  translate: 0 4px;
+  width: 41.0121933087px;
+  translate: 0 2.5px;
 }
 .lateral-bar .hamb__menu input:checked {
   opacity: 0;
@@ -86,6 +86,13 @@
 }
 .lateral-bar__redes a:hover {
   color: #479D31;
+}
+
+.over-label__lateral-bar p {
+  width: 100vw;
+  height: 100vh;
+  background-color: #479D31;
+  color: white;
 }
 
 .navbar {
@@ -259,6 +266,11 @@
   left: 227px;
   margin-top: 150px;
 }
+@media (max-width: 1440px) {
+  .bloque3 {
+    width: 1213px;
+  }
+}
 @media (max-width: 1024px) {
   .bloque3 {
     margin-top: 0;
@@ -321,11 +333,15 @@
   margin-top: 100px;
 }
 @media (max-width: 1440px) {
-  .bloque4 .bloque4__tarjetas-work {
-    justify-content: start;
+  .bloque4 {
+    width: 1213px;
   }
-  .bloque4 .bloque4__text-descrip {
-    width: 300px;
+  .bloque4 .bloque4__tarjetas-work {
+    justify-content: space-around;
+    width: 961px;
+  }
+  .bloque4 .bloque4__tarjetas-work-card {
+    margin: 0;
   }
 }
 @media (max-width: 1024px) {
@@ -362,9 +378,9 @@
 }
 
 .bloque4__tarjetas-work {
-  width: 1300px;
+  width: 1100px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .bloque4__tarjetas-work-card {
