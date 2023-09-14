@@ -11,6 +11,7 @@
   background-attachment: fixed;
 }
 
+/*variables para el menu hamb*/
 .lateral-bar {
   width: 100px;
   height: 1024px;
@@ -24,6 +25,43 @@
   margin: 10px;
   width: 80px;
   height: 50px;
+}
+.lateral-bar .hamb__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: max-content;
+  cursor: pointer;
+}
+.lateral-bar .hamb__menu::before, .lateral-bar .hamb__menu::after, .lateral-bar .hamb__menu input {
+  content: "";
+  width: 60px;
+  height: 8px;
+  background-color: white;
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity 200ms ease-in-out, width 200ms ease-in-out, rotate 200ms ease-in-out, translate 200ms ease-in-out;
+}
+.lateral-bar .hamb__menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+.lateral-bar .hamb__menu:has(input:checked)::before {
+  rotate: 45deg;
+  translate: 0 -4px;
+  width: 62.2253967443px;
+}
+.lateral-bar .hamb__menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: 62.2253967443px;
+  translate: 0 4px;
+}
+.lateral-bar .hamb__menu input:checked {
+  opacity: 0;
+  width: 0;
 }
 @media (max-width: 1024px) {
   .lateral-bar {
