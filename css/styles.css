@@ -11,7 +11,6 @@
   background-attachment: fixed;
 }
 
-/*variables para el menu hamb*/
 .lateral-bar {
   width: 100px;
   height: 1024px;
@@ -25,49 +24,6 @@
   margin: 10px;
   width: 80px;
   height: 50px;
-}
-.lateral-bar .hamb__menu {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  width: max-content;
-  cursor: pointer;
-  position: absolute;
-  top: 240px;
-  left: 32px;
-}
-.lateral-bar .hamb__menu::before, .lateral-bar .hamb__menu::after, .lateral-bar .hamb__menu input {
-  content: "";
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  border-radius: 9999px;
-  transform-origin: left center;
-  transition: opacity 200ms ease-in-out, width 200ms ease-in-out, rotate 200ms ease-in-out, translate 200ms ease-in-out;
-}
-.lateral-bar .hamb__menu input {
-  appearance: none;
-  padding: 0;
-  margin: 0;
-  outline: none;
-  pointer-events: none;
-}
-.lateral-bar .hamb__menu:has(input:checked)::before {
-  rotate: 45deg;
-  translate: 0 -2.5px;
-  width: 41.0121933087px;
-}
-.lateral-bar .hamb__menu:has(input:checked)::after {
-  rotate: -45deg;
-  width: 41.0121933087px;
-  translate: 0 2.5px;
-}
-.lateral-bar .hamb__menu input:checked {
-  opacity: 0;
-  width: 0;
-}
-.lateral-bar .hamb__menu:has(input:checked) + .over-label__lateral-bar {
-  translate: 0;
 }
 .lateral-bar .over-label__lateral-bar {
   transition: translate 400ms ease-in-out;
@@ -98,6 +54,9 @@
   font-weight: 800;
   font-size: 65px;
 }
+.lateral-bar .over-label__lateral-bar ul li #closeMark {
+  cursor: pointer;
+}
 .lateral-bar .over-label__lateral-bar ul li a {
   text-decoration: none;
   color: black;
@@ -119,6 +78,10 @@
   gap: 50px;
   font-size: 30px;
   margin-bottom: 250px;
+}
+.lateral-bar__redes #openMark {
+  color: white;
+  cursor: pointer;
 }
 .lateral-bar__redes a {
   color: white;
@@ -462,6 +425,31 @@
   font-weight: bold;
   font-size: 20px;
   padding: 0 25px;
+}
+.bloque4__tarjetas-work-card .bloque4__tarjetas-overlay .tag__skill {
+  text-align: start;
+  padding: 10px 35px;
+  font-size: 13px;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+}
+.bloque4__tarjetas-work-card .bloque4__tarjetas-overlay .tag__skill .tag__skill--html {
+  background-color: rgba(0, 0, 255, 0.733);
+  border-radius: 10px;
+  padding: 2px 10px;
+  margin: 0 2px;
+}
+.bloque4__tarjetas-work-card .bloque4__tarjetas-overlay .tag__skill .tag__skill--css {
+  background-color: rgba(255, 136, 0, 0.623);
+  border-radius: 10px;
+  padding: 2px 10px;
+  margin: 0 2px;
+}
+.bloque4__tarjetas-work-card .bloque4__tarjetas-overlay .tag__skill .tag__skill--Js {
+  background-color: rgba(251, 255, 0, 0.658);
+  border-radius: 10px;
+  padding: 2px 10px;
+  margin: 0 2px;
 }
 
 .bloque5 {

@@ -1,12 +1,5 @@
 $font-pr_hel: Arial, Helvetica, sans-serif;
-$font-sec_Ser: sans-serif;
+$font-coder: 'Source Code Pro', monospace;
 $color-sec:#479D31;
 
-/*variables para el menu hamb*/
-$bar-width: 35px;
-$bar-heigth: 5px;
-$bar-gap:7px;
-$hamb-height: calc($bar-heigth * 3 + $bar-gap * 2);
-$x-width: calc($hamb-height * 1.41421356237);
-$animation-timing: 200ms ease-in-out;
 
